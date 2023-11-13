@@ -4,3 +4,7 @@
 
 @import 'index','about','works';
 @import 'footer';
+
+body{
+    background:url($imgUrl + 'background.jpg') no-repeat fixed center top/cover;
+}

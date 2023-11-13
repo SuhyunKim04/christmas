@@ -1,3 +1,35 @@
-h1{
-    font-size: 20px;
+.wrap{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .tree1{
+        position: absolute;
+        width: 50%;
+        bottom:0;
+        left:0;
+    }
+    .tree2 {
+        position: absolute;
+        width:60%;
+        bottom:0;right:0;
+    }
+
+    .tree3 {
+        position: absolute;
+        width: 40%;
+        top:0;right:0;
+    }
+    .tree4{
+        position:absolute;
+        width:70%;
+    }
+    .christmas_tree{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:40%;
+        width:20%;
+    }
 }

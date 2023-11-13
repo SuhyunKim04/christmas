@@ -65,8 +65,44 @@ fieldset {
   border: none;
 }
 
-h1 {
-  font-size: 20px;
+.wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrap .tree1 {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+}
+.wrap .tree2 {
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  right: 0;
+}
+.wrap .tree3 {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+.wrap .tree4 {
+  position: absolute;
+  width: 70%;
+}
+.wrap .christmas_tree {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40%;
+  width: 20%;
+}
+
+body {
+  background: url("../images/background.jpg") no-repeat fixed center top/cover;
 }
 
 /*# sourceMappingURL=common.css.map */
