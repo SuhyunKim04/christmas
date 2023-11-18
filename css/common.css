@@ -95,14 +95,23 @@ fieldset {
 }
 .wrap .christmas_tree {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 60%;
   right: 60%;
   width: 5%;
 }
+.wrap .houses {
+  position: absolute;
+  width: 10%;
+  top: 60%;
+}
+.wrap .houses_2 {
+  position: absolute;
+  width: 5%;
+  top: 60%;
+}
 
 body {
-  background: url("../images/background.jpg") no-repeat fixed center top/cover;
+  background: url("../images/night_sky.png") no-repeat fixed center top/cover;
 }
 
 /*# sourceMappingURL=common.css.map */

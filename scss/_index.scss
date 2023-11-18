@@ -27,9 +27,19 @@
     }
     .christmas_tree{
         position: absolute;
-        top:50%;
-        transform: translateY(-50%);
+        top:60%;
         right:60%;
         width:5%;
+    }
+    .houses{
+        position: absolute;
+        width: 10%;
+        top:60%;
+    }
+
+    .houses_2{
+        position: absolute;
+        width: 5%;
+        top: 60%;
     }
 }
