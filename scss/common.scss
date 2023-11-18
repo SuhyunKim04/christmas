@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-@import 'reset','responsible','variables';
+@import 'reset','responsible','variables','mixin';
 
 @import 'index','about','works';
 @import 'footer';
 
-body{
+.bg{
     background:url($imgUrl + 'night_sky.png') no-repeat fixed center top/cover;
 }

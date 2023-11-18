@@ -5,41 +5,56 @@
     overflow: hidden;
 
     .tree1{
-        position: absolute;
-        width: 50%;
-        bottom:0;
-        left:0;
+        @include pos($w:50%,$t:0);
     }
     .tree2 {
-        position: absolute;
-        width:60%;
-        bottom:0;right:0;
+        @include pos($w:60%, $r:0,$b:0);
     }
 
     .tree3 {
-        position: absolute;
-        width: 40%;
-        top:0;right:0;
+        @include pos($w:40%,$r:0);
     }
     .tree4{
-        position:absolute;
-        width:70%;
+        @include pos($w:70%, $l:0,$t:0);
     }
     .christmas_tree{
-        position: absolute;
-        top:60%;
-        right:60%;
-        width:5%;
+        @include pos($b:130px,$r:60%,$w:5%);
     }
     .houses{
-        position: absolute;
-        width: 10%;
-        top:60%;
+       @include pos($w:10%, $t:62%, $l:10%);
     }
 
     .houses_2{
+        @include pos($w:5%, $b:140px, $l:50%);
+    }
+    .houses_3{
+        @include pos($w:5%, $b:140px, $r:30%);
+    }
+    .houses_4{
+        @include pos($w:5%, $b:120px, $r:20%);
+    }
+    .moon{
+        border: 1px solid #fff;
+        background-color: #fff;
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+        filter: drop-shadow(0px 0px 50px #fff);
         position: absolute;
-        width: 5%;
-        top: 60%;
+        top:50px;
+        left: 40px;
+    }
+    .houses_5{
+        @include pos($w:5%, $b:120px, $r:10%);
+    }
+
+    .snowman_1{
+        @include pos($w:20px, $b:120px, $r:60%);
+    }
+    .snowman_2{
+        @include pos ($w:20px, $b:120px, $l:40%);
+    }
+    .snowman_3{
+        @include pos($w:20px,$b:120px,$l:34%);
     }
 }

@@ -1,0 +1,9 @@
+@mixin pos($p:absolute, $l:null, $t:null, $r:null, $b:null, $w:null,$z:null){
+    position: $p;
+    left:$l;
+    right:$r;
+    top:$t;
+    bottom:$b;
+    width:$w;
+    z-index:$z
+}

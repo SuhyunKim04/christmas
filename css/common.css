@@ -73,44 +73,93 @@ fieldset {
 }
 .wrap .tree1 {
   position: absolute;
+  top: 0;
   width: 50%;
-  bottom: 0;
-  left: 0;
 }
 .wrap .tree2 {
   position: absolute;
-  width: 60%;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  width: 60%;
 }
 .wrap .tree3 {
   position: absolute;
-  width: 40%;
-  top: 0;
   right: 0;
+  width: 40%;
 }
 .wrap .tree4 {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 70%;
 }
 .wrap .christmas_tree {
   position: absolute;
-  top: 60%;
   right: 60%;
+  bottom: 130px;
   width: 5%;
 }
 .wrap .houses {
   position: absolute;
+  left: 10%;
+  top: 62%;
   width: 10%;
-  top: 60%;
 }
 .wrap .houses_2 {
   position: absolute;
+  left: 50%;
+  bottom: 140px;
   width: 5%;
-  top: 60%;
+}
+.wrap .houses_3 {
+  position: absolute;
+  right: 30%;
+  bottom: 140px;
+  width: 5%;
+}
+.wrap .houses_4 {
+  position: absolute;
+  right: 20%;
+  bottom: 120px;
+  width: 5%;
+}
+.wrap .moon {
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 50px #fff);
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}
+.wrap .houses_5 {
+  position: absolute;
+  right: 10%;
+  bottom: 120px;
+  width: 5%;
+}
+.wrap .snowman_1 {
+  position: absolute;
+  right: 60%;
+  bottom: 120px;
+  width: 20px;
+}
+.wrap .snowman_2 {
+  position: absolute;
+  left: 40%;
+  bottom: 120px;
+  width: 20px;
+}
+.wrap .snowman_3 {
+  position: absolute;
+  left: 34%;
+  bottom: 120px;
+  width: 20px;
 }
 
-body {
+.bg {
   background: url("../images/night_sky.png") no-repeat fixed center top/cover;
 }
 
