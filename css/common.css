@@ -70,7 +70,6 @@ fieldset {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: url("../images/snowy.svg") no-repeat fixed center top/cover;
 }
 .wrap .tree1 {
   position: absolute;
@@ -125,14 +124,12 @@ fieldset {
   width: 5%;
 }
 .wrap .moon {
-  background-color: #fdf7c6;
+  background: url("../images/moon.svg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  filter: drop-shadow(0px 0px 50px #fdf7c6);
-  position: absolute;
-  top: 50px;
-  left: 40px;
 }
 .wrap .houses_5 {
   position: absolute;

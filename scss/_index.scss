@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: url($imgUrl + 'snowy.svg') no-repeat fixed center top/cover;
+    // background: url($imgUrl + 'snowy.svg') no-repeat fixed center top/cover;
 
     .tree1{
         @include pos($w:50%,$t:0);
@@ -35,14 +35,12 @@
         @include pos($w:5%, $b:120px, $r:20%);
     }
     .moon{
-        background-color:#fdf7c6;
-        width:150px;
-        height:150px;
-        border-radius: 50%;
-        filter: drop-shadow(0px 0px 50px #fdf7c6);
+        background:url($imgUrl + 'moon.svg') no-repeat center center/cover;
         position: absolute;
-        top:50px;
-        left: 40px;
+        top:0;
+        left:0;
+        width: 150px;
+        height:150px;
     }
     .houses_5{
         @include pos($w:5%, $b:120px, $r:10%);
