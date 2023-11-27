@@ -23,6 +23,7 @@
     }
     .houses{
        @include pos($w:10%, $t:62%, $l:10%);
+       z-index: 103;
     }
 
     .houses_2{
@@ -70,3 +71,25 @@
         @include pos($b:100px);
     }
 }
+
+.back_trees{
+    .back_trees_1{
+        @include pos($w:50px, $b:200px, $l:100px);
+        z-index: 103;
+    }
+}
+
+.santa{
+    position: relative;
+    background:url($imgUrl + 'santa.png') no-repeat center center/cover;
+    width: 222px;
+    height: 114px;
+    animation-name: santa;
+}
+
+// @keyframes santa {
+//     0% {
+
+//     }
+// }
+
