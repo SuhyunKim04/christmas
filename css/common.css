@@ -124,10 +124,10 @@ fieldset {
   width: 5%;
 }
 .wrap .moon {
-  background: url("../images/moon.svg") no-repeat center center/cover;
+  background: url("../images/moon.png") no-repeat center center/cover;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50px;
+  right: 80px;
   width: 150px;
   height: 150px;
 }
@@ -156,8 +156,23 @@ fieldset {
   width: 20px;
 }
 
+.snow_ground .snow_layer_1 {
+  position: absolute;
+  bottom: 0;
+  z-index: 101;
+}
+.snow_ground .snow_layer_2 {
+  position: absolute;
+  bottom: 20px;
+  z-index: 100;
+}
+.snow_ground .snow_layer_3 {
+  position: absolute;
+  bottom: 100px;
+}
+
 .bg {
-  background: url("../images/night_sky.png") no-repeat fixed center top/cover;
+  background: url("../images/background.png") no-repeat fixed center top/cover;
 }
 
 /*# sourceMappingURL=common.css.map */

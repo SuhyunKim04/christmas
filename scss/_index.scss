@@ -35,10 +35,10 @@
         @include pos($w:5%, $b:120px, $r:20%);
     }
     .moon{
-        background:url($imgUrl + 'moon.svg') no-repeat center center/cover;
+        background:url($imgUrl + 'moon.png') no-repeat center center/cover;
         position: absolute;
-        top:0;
-        left:0;
+        top:50px;
+        right:80px;
         width: 150px;
         height:150px;
     }
@@ -54,5 +54,19 @@
     }
     .snowman_3{
         @include pos($w:20px,$b:120px,$l:34%);
+    }
+
+}
+.snow_ground{
+    .snow_layer_1{
+        @include pos($b:0);
+        z-index: 101;
+    }
+    .snow_layer_2{
+        @include pos($b:20px);
+        z-index: 100;
+    }
+    .snow_layer_3{
+        @include pos($b:100px);
     }
 }
