@@ -6,75 +6,98 @@
     // background: url($imgUrl + 'snowy.svg') no-repeat fixed center top/cover;
 
     .tree1{
-        @include pos($w:50%,$t:0);
+        @include pos($w:50%,$t:0,$z:105);
     }
     .tree2 {
-        @include pos($w:60%, $r:0,$b:0);
+        @include pos($w:60%, $r:0,$b:0,$z:105);
     }
 
     .tree3 {
-        @include pos($w:40%,$r:0);
+        @include pos($w:40%,$r:0, $z:105);
     }
     .tree4{
-        @include pos($w:70%, $l:0,$t:0);
+        @include pos($w:70%, $l:0,$t:0,$z:105);
     }
-    .christmas_tree{
-        @include pos($b:130px,$r:60%,$w:5%);
-    }
+    
     .houses{
-       @include pos($w:10%, $t:62%, $l:10%);
+       @include pos($w:5%, $b:130px, $l:250px);
        z-index: 103;
     }
-
     .houses_2{
-        @include pos($w:5%, $b:140px, $l:50%);
+        @include pos($w:3%, $b:140px, $r:50%,$z:105);
     }
     .houses_3{
-        @include pos($w:5%, $b:140px, $r:30%);
+        @include pos($w:3%, $b:35px, $r:40%,$z:105);
     }
     .houses_4{
-        @include pos($w:5%, $b:120px, $r:20%);
-    }
-    .moon{
-        background:url($imgUrl + 'moon.png') no-repeat center center/cover;
-        position: absolute;
-        top:50px;
-        right:80px;
-        width: 150px;
-        height:150px;
+        @include pos($w:3%, $b:190px, $r:30%,$z:105);
     }
     .houses_5{
-        @include pos($w:5%, $b:120px, $r:10%);
+        @include pos($w:3%, $b:190px, $l:30%,$z:105);
+    }
+    .moon{
+        @include bgCover('moon.png');
+        @include pos($w:150px, $h:150px, $t:50px,$r:80px);
+    }
+    .christmas_tree{
+        position: absolute;
+        .center_tree{
+            @include pos($b:0,$r:60%,$w:5%,$z:105);
+        }
+        .stick{
+            @include pos($b: 15px,$l:36%,$w:5px,$z:105);
+            transform: rotate(-30deg)
+        }
+        .socks{
+            @include pos($b:20px, $l:38%, $w:10px, $z:105);
+        }
+
+        .deco_1{
+            @include pos($b:32px, $l:37%, $w:5px, $z:105);
+        }
+        .deco_2{
+            @include pos($b:46px, $l:38%, $w:5px, $z:105);
+        }
+        .snowman_1{
+            @include pos($w:15px, $b:0, $r:60%,$z:105);
+        }
+        .snowman_2{
+            @include pos ($w:15px, $b:0, $l:40%,$z:105);
+        }
+        .snowman_3{
+            @include pos($w:15px,$b:0,$l:34%,$z:105);
+        }
+        // .berry{
+        //     @include pos($w:5px,$l:35%,$b:65px,$z:105);
+        // }
+        .deco_3{
+            @include pos($b:16px, $l:37%, $w:5px, $z:105);
+        }
+        .deco_bell{
+            @include pos($b:50px, $l:37%, $w:5px, $z:105);
+        }
     }
 
-    .snowman_1{
-        @include pos($w:20px, $b:120px, $r:60%);
-    }
-    .snowman_2{
-        @include pos ($w:20px, $b:120px, $l:40%);
-    }
-    .snowman_3{
-        @include pos($w:20px,$b:120px,$l:34%);
-    }
+    
 
 }
 .snow_ground{
     .snow_layer_1{
-        @include pos($b:0);
+        @include pos($b:-40px);
         z-index: 101;
     }
     .snow_layer_2{
-        @include pos($b:20px);
+        @include pos($b:-50px);
         z-index: 100;
     }
     .snow_layer_3{
-        @include pos($b:100px);
+        @include pos($b:-70px);
     }
 }
 
 .back_trees{
     .back_trees_1{
-        @include pos($w:50px, $b:200px, $l:100px);
+        @include pos($w:26px, $b:145px, $l:230px);
         z-index: 103;
     }
 }

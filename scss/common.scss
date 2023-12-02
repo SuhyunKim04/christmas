@@ -5,6 +5,7 @@
 @import 'index','about','works';
 @import 'footer';
 
+
 .bg{
-    background:url($imgUrl + 'background.png') no-repeat fixed center top/cover;
+    @include bgCover('night_sky.svg');
 }

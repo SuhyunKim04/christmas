@@ -1,9 +1,38 @@
-@mixin pos($p:absolute, $l:null, $t:null, $r:null, $b:null, $w:null,$z:null){
+@mixin pos($p:absolute, $l:null, $t:null, $r:null, $b:null, $w:null,$z:null, $h:null){
     position: $p;
     left:$l;
     right:$r;
     top:$t;
     bottom:$b;
     width:$w;
+    height:$h;
     z-index:$z
+}
+
+@mixin flex($j: space-between, $a:center, $d:null, $c:null, $r:null ){
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    flex-direction: $d;
+    column-gap: $c;
+    row-gap:$r;
+}
+
+@mixin fixed($l:0, $t:0, $r:0, $b:0){
+    position: fixed;
+    left:$l;
+    right:$r;
+    top:$t;
+    bottom: $b;
+}
+
+@mixin dim($color:#000, $alpha:0.7, $p:fixed) {
+    @if $p != null {
+        @include posFull($p);
+    }
+    background-color:rgba($color, $alpha);
+}
+
+@mixin bgCover($path: null, $p:center center, $s: cover){
+    background: url($imgUrl + '#{$path}') no-repeat #{$p}/#{$s};
 }

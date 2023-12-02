@@ -75,108 +75,166 @@ fieldset {
   position: absolute;
   top: 0;
   width: 50%;
+  z-index: 105;
 }
 .wrap .tree2 {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 60%;
+  z-index: 105;
 }
 .wrap .tree3 {
   position: absolute;
   right: 0;
   width: 40%;
+  z-index: 105;
 }
 .wrap .tree4 {
   position: absolute;
   left: 0;
   top: 0;
   width: 70%;
-}
-.wrap .christmas_tree {
-  position: absolute;
-  right: 60%;
-  bottom: 130px;
-  width: 5%;
+  z-index: 105;
 }
 .wrap .houses {
   position: absolute;
-  left: 10%;
-  top: 62%;
-  width: 10%;
+  left: 250px;
+  bottom: 130px;
+  width: 5%;
   z-index: 103;
 }
 .wrap .houses_2 {
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: 140px;
-  width: 5%;
+  width: 3%;
+  z-index: 105;
 }
 .wrap .houses_3 {
   position: absolute;
-  right: 30%;
-  bottom: 140px;
-  width: 5%;
+  right: 40%;
+  bottom: 35px;
+  width: 3%;
+  z-index: 105;
 }
 .wrap .houses_4 {
   position: absolute;
-  right: 20%;
-  bottom: 120px;
-  width: 5%;
+  right: 30%;
+  bottom: 190px;
+  width: 3%;
+  z-index: 105;
+}
+.wrap .houses_5 {
+  position: absolute;
+  left: 30%;
+  bottom: 190px;
+  width: 3%;
+  z-index: 105;
 }
 .wrap .moon {
   background: url("../images/moon.png") no-repeat center center/cover;
   position: absolute;
-  top: 50px;
   right: 80px;
+  top: 50px;
   width: 150px;
   height: 150px;
 }
-.wrap .houses_5 {
+.wrap .christmas_tree {
   position: absolute;
-  right: 10%;
-  bottom: 120px;
-  width: 5%;
 }
-.wrap .snowman_1 {
+.wrap .christmas_tree .center_tree {
   position: absolute;
   right: 60%;
-  bottom: 120px;
-  width: 20px;
+  bottom: 0;
+  width: 5%;
+  z-index: 105;
 }
-.wrap .snowman_2 {
+.wrap .christmas_tree .stick {
+  position: absolute;
+  left: 36%;
+  bottom: 15px;
+  width: 5px;
+  z-index: 105;
+  transform: rotate(-30deg);
+}
+.wrap .christmas_tree .socks {
+  position: absolute;
+  left: 38%;
+  bottom: 20px;
+  width: 10px;
+  z-index: 105;
+}
+.wrap .christmas_tree .deco_1 {
+  position: absolute;
+  left: 37%;
+  bottom: 32px;
+  width: 5px;
+  z-index: 105;
+}
+.wrap .christmas_tree .deco_2 {
+  position: absolute;
+  left: 38%;
+  bottom: 46px;
+  width: 5px;
+  z-index: 105;
+}
+.wrap .christmas_tree .snowman_1 {
+  position: absolute;
+  right: 60%;
+  bottom: 0;
+  width: 15px;
+  z-index: 105;
+}
+.wrap .christmas_tree .snowman_2 {
   position: absolute;
   left: 40%;
-  bottom: 120px;
-  width: 20px;
+  bottom: 0;
+  width: 15px;
+  z-index: 105;
 }
-.wrap .snowman_3 {
+.wrap .christmas_tree .snowman_3 {
   position: absolute;
   left: 34%;
-  bottom: 120px;
-  width: 20px;
+  bottom: 0;
+  width: 15px;
+  z-index: 105;
+}
+.wrap .christmas_tree .deco_3 {
+  position: absolute;
+  left: 37%;
+  bottom: 16px;
+  width: 5px;
+  z-index: 105;
+}
+.wrap .christmas_tree .deco_bell {
+  position: absolute;
+  left: 37%;
+  bottom: 50px;
+  width: 5px;
+  z-index: 105;
 }
 
 .snow_ground .snow_layer_1 {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   z-index: 101;
 }
 .snow_ground .snow_layer_2 {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
   z-index: 100;
 }
 .snow_ground .snow_layer_3 {
   position: absolute;
-  bottom: 100px;
+  bottom: -70px;
 }
 
 .back_trees .back_trees_1 {
   position: absolute;
-  left: 100px;
-  bottom: 200px;
-  width: 50px;
+  left: 230px;
+  bottom: 145px;
+  width: 26px;
   z-index: 103;
 }
 
@@ -189,7 +247,7 @@ fieldset {
 }
 
 .bg {
-  background: url("../images/background.png") no-repeat fixed center top/cover;
+  background: url("../images/night_sky.svg") no-repeat center center/cover;
 }
 
 /*# sourceMappingURL=common.css.map */
