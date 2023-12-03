@@ -39,75 +39,73 @@
         @include bgCover('moon.png');
         @include pos($w:150px, $h:150px, $t:50px,$r:80px);
     }
-    .christmas_tree{
-        position: absolute;
-        .center_tree{
-            @include pos($b:0,$r:60%,$w:5%,$z:105);
-        }
-        .stick{
-            @include pos($b: 15px,$l:36%,$w:5px,$z:105);
-            transform: rotate(-30deg)
-        }
-        .socks{
-            @include pos($b:20px, $l:38%, $w:10px, $z:105);
-        }
-
-        .deco_1{
-            @include pos($b:32px, $l:37%, $w:5px, $z:105);
-        }
-        .deco_2{
-            @include pos($b:46px, $l:38%, $w:5px, $z:105);
-        }
-        .snowman_1{
-            @include pos($w:15px, $b:0, $r:60%,$z:105);
-        }
-        .snowman_2{
-            @include pos ($w:15px, $b:0, $l:40%,$z:105);
-        }
-        .snowman_3{
-            @include pos($w:15px,$b:0,$l:34%,$z:105);
-        }
-        // .berry{
-        //     @include pos($w:5px,$l:35%,$b:65px,$z:105);
-        // }
-        .deco_3{
-            @include pos($b:16px, $l:37%, $w:5px, $z:105);
-        }
-        .deco_bell{
-            @include pos($b:50px, $l:37%, $w:5px, $z:105);
-        }
+    .center_tree{
+        @include pos($b:85px,$r:60%,$w:5%,$z:105);
+    }
+    .stick{
+        @include pos($b: 15px,$l:36%,$w:5px,$z:105);
+        transform: rotate(-30deg)
+    }
+    .socks{
+        @include pos($b:20px, $l:38%, $w:10px, $z:105);
     }
 
+    .deco_1{
+        @include pos($b:32px, $l:37%, $w:5px, $z:105);
+    }
+    .deco_2{
+        @include pos($b:46px, $l:38%, $w:5px, $z:105);
+    }
+    .snowman_1{
+        @include pos($w:15px, $b:0, $r:60%,$z:105);
+    }
+    .snowman_2{
+        @include pos ($w:15px, $b:0, $l:40%,$z:105);
+    }
+    .snowman_3{
+        @include pos($w:15px,$b:0,$l:34%,$z:105);
+    }
+    // .berry{
+    //     @include pos($w:5px,$l:35%,$b:65px,$z:105);
+    // }
+    .deco_3{
+        @include pos($b:16px, $l:37%, $w:50px, $z:105);
+    }
+    .deco_bell{
+        @include pos($b:50px, $l:37%, $w:100px, $z:105);
+    }
+
+    .socks_gray{
+        @include pos($b:50px, $l:37%, $w:5px, $z:105);
+    }
+    .snow_ground{
+        .snow_layer_1{
+            @include pos($b:-40px);
+            z-index: 101;
+        }
+        .snow_layer_2{
+            @include pos($b:-50px);
+            z-index: 100;
+        }
+        .snow_layer_3{
+            @include pos($b:-70px);
+        }
+    }
     
-
-}
-.snow_ground{
-    .snow_layer_1{
-        @include pos($b:-40px);
-        z-index: 101;
+    .back_trees{
+        .back_trees_1{
+            @include pos($w:26px, $b:145px, $l:230px);
+            z-index: 103;
+        }
     }
-    .snow_layer_2{
-        @include pos($b:-50px);
-        z-index: 100;
+    
+    .santa{
+        position: relative;
+        background:url($imgUrl + 'santa.png') no-repeat center center/cover;
+        width: 222px;
+        height: 114px;
+        animation-name: santa;
     }
-    .snow_layer_3{
-        @include pos($b:-70px);
-    }
-}
-
-.back_trees{
-    .back_trees_1{
-        @include pos($w:26px, $b:145px, $l:230px);
-        z-index: 103;
-    }
-}
-
-.santa{
-    position: relative;
-    background:url($imgUrl + 'santa.png') no-repeat center center/cover;
-    width: 222px;
-    height: 114px;
-    animation-name: santa;
 }
 
 // @keyframes santa {
