@@ -5,7 +5,14 @@
 @import 'index','about','works';
 @import 'footer';
 
-
-.bg{
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.all_wrap{
     @include bgCover('night_sky.svg');
+    background-attachment: fixed;
+    @include pos($p:fixed, $l:0,$t:0,$r:0,$b:0);
+    overflow: hidden;
 }
