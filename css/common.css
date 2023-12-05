@@ -195,8 +195,8 @@ fieldset {
 .wrap .tree_container {
   position: absolute;
   right: 60%;
-  bottom: 85px;
-  width: 5%;
+  bottom: 300px;
+  width: 5vw;
   z-index: 105;
   transform: scale(3);
   outline: 1px solid red;
@@ -207,149 +207,158 @@ fieldset {
 .wrap .tree_container .deco_1 {
   position: absolute;
   left: 37%;
-  bottom: 136px;
-  width: 10px;
+  bottom: 50px;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .tree_container .deco_2 {
   position: absolute;
-  left: 36%;
-  bottom: 125px;
-  width: 10px;
+  left: 7px;
+  bottom: 12px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(40deg);
 }
 .wrap .tree_container .deco_3 {
   position: absolute;
-  left: 38%;
-  bottom: 96px;
-  width: 10px;
+  left: 40px;
+  bottom: 30px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(50deg);
 }
 .wrap .tree_container .deco_4 {
   position: absolute;
-  left: 37%;
-  bottom: 100px;
-  width: 10px;
+  left: 20px;
+  bottom: 25px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(20deg);
 }
 .wrap .tree_container .deco_5 {
   position: absolute;
-  left: 39%;
-  bottom: 111px;
-  width: 10px;
+  left: 46px;
+  bottom: 40px;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .tree_container .deco_6 {
   position: absolute;
-  left: 38%;
-  bottom: 115px;
-  width: 10px;
+  left: 54px;
+  bottom: 12px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(20deg);
 }
 .wrap .tree_container .cherry {
   position: absolute;
-  left: 34%;
-  bottom: 135px;
-  width: 15px;
+  left: 65px;
+  top: 0;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .tree_container .cherry_gray {
   position: absolute;
-  left: 36%;
-  bottom: 90px;
-  width: 15px;
+  left: 42px;
+  bottom: 60px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(50deg);
 }
 .wrap .tree_container .deco_bell {
   position: absolute;
-  left: 40%;
-  bottom: 150px;
-  width: 15px;
+  left: -20px;
+  bottom: 50px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(60deg);
 }
 .wrap .tree_container .deco_bell_gray {
   position: absolute;
-  left: 38%;
-  bottom: 125px;
-  width: 15px;
+  left: 30px;
+  bottom: 18px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(20deg);
 }
 .wrap .tree_container .stick {
   position: absolute;
-  left: 36%;
-  bottom: 110px;
-  width: 15px;
+  left: 53px;
+  bottom: 25px;
+  width: 0.5vw;
   z-index: 105;
   transform: rotate(-10deg);
 }
 .wrap .tree_container .tree_snowman {
   position: absolute;
-  left: 36%;
-  bottom: 170px;
-  width: 15px;
+  left: -5px;
+  bottom: 70px;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .tree_container .tree_snowman_gray {
   position: absolute;
-  left: 38%;
-  bottom: 100px;
-  width: 15px;
+  left: 28px;
+  bottom: 34px;
+  width: 0.5vw;
   z-index: 105;
+  transform: rotate(30deg);
 }
 .wrap .tree_container .red_socks {
   position: absolute;
-  left: 37%;
-  bottom: 123px;
-  width: 10px;
+  left: 12px;
+  bottom: 42px;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .tree_container .star {
   position: absolute;
-  left: 37%;
-  bottom: 155px;
+  left: 50%;
+  bottom: 73px;
   width: 20px;
   z-index: 105;
+  transform: translateX(-50%);
 }
 .wrap .tree_container .ribbon {
   position: absolute;
-  left: 38%;
-  bottom: 146px;
-  width: 10px;
+  left: 27px;
+  top: 10px;
+  width: 0.5vw;
   z-index: 105;
-  transform: rotate(-30deg);
+  transform: rotate(30deg);
 }
 .wrap .tree_container .white_socks {
   position: absolute;
-  left: 35%;
-  bottom: 90px;
-  width: 10px;
+  left: 40px;
+  bottom: 15px;
+  width: 0.5vw;
   z-index: 105;
 }
 .wrap .snowmans .purplehat_snowman {
   position: absolute;
-  left: 32%;
-  bottom: 88px;
-  width: 30px;
+  left: -36px;
+  bottom: 0;
+  width: 2vw;
   z-index: 105;
 }
 .wrap .snowmans .redhat_snowman {
   position: absolute;
-  left: 42%;
-  bottom: 83px;
-  width: 20px;
+  right: -17px;
+  bottom: 0;
+  width: 1.5vw;
   z-index: 105;
 }
 .wrap .snowmans .red_ribbon_snowman {
   position: absolute;
-  left: 38%;
-  bottom: 76px;
+  right: -26px;
+  bottom: 0;
   width: 10px;
   z-index: 105;
 }
 .wrap .snowmans .green_ribbon_snowman {
   position: absolute;
-  left: 37%;
-  bottom: 76px;
+  left: -13px;
+  bottom: 0;
   width: 10px;
   z-index: 105;
 }

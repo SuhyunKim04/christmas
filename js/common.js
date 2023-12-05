@@ -14,4 +14,9 @@
 //     event.target.style.opacity = 0.5;
 //   });
 
-
+const tr = document.querySelector('.tree_container');
+// console.log(tree_container)
+window.addEventListener('scroll', (e) => {
+     let scroll = window.scrollY;
+    tr.style.transform = 'scale(6)';
+})

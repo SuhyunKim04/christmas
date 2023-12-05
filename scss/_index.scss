@@ -87,80 +87,89 @@
     }
 
     .tree_container{
-        @include pos($b:85px,$r:60%,$w:5%,$z:105);
+        @include pos($b:300px,$r:60%,$w:5vw,$z:105);
         transform: scale(3);
         outline: 1px solid red;
         .christmas_tree{
            width: 100%;
         }
         .deco_1{
-            @include pos($b:136px, $l:37%, $w:10px, $z:105);
+            @include pos($b:50px, $l:37%, $w:0.5vw, $z:105);
         }
         .deco_2{
-            @include pos($b:125px, $l:36%, $w:10px, $z:105);
+            @include pos($b:12px, $l:7px, $w:0.5vw, $z:105);
+            transform: rotate(40deg);
         }
         .deco_3{
-            @include pos($b:96px, $l:38%, $w:10px, $z:105);
+            @include pos($b:30px, $l:40px, $w:0.5vw, $z:105);
+            transform: rotate(50deg);
         }
         .deco_4{
-            @include pos($b:100px, $l:37%, $w:10px, $z:105);
+            @include pos($b:25px, $l:20px, $w:0.5vw, $z:105);
+            transform: rotate(20deg);
         }
         .deco_5{
-            @include pos($b:111px, $l:39%, $w:10px, $z:105);
+            @include pos($b:40px, $l:46px, $w:0.5vw, $z:105);
         }
         .deco_6{
-            @include pos($b:115px, $l:38%, $w:10px, $z:105);
+            @include pos($b:12px, $l:54px, $w:0.5vw, $z:105);
+            transform: rotate(20deg);
         }
         .cherry{
-            @include pos($b:135px, $l:34%, $w:15px, $z:105);
+            @include pos($t:0, $l:65px, $w:0.5vw, $z:105);
         }
         .cherry_gray{
-            @include pos($b:90px, $l:36%, $w:15px, $z:105);
+            @include pos($b:60px, $l:42px, $w:0.5vw, $z:105);
+            transform: rotate(50deg);
         }
         .deco_bell{
-            @include pos($b:150px, $l:40%, $w:15px, $z:105);
+            @include pos($b:50px, $l:-20px, $w:0.5vw, $z:105);
+            transform: rotate(60deg);
         }
         .deco_bell_gray{
-            @include pos($b:125px, $l:38%, $w:15px, $z:105);
+            @include pos($b:18px, $l:30px, $w:0.5vw, $z:105);
+            transform: rotate(20deg);
         }
         .stick{
-            @include pos($b: 110px,$l:36%,$w:15px,$z:105);
+            @include pos($b:25px, $l:53px, $w:0.5vw, $z:105);
             transform: rotate(-10deg)
         }
         .tree_snowman{
-            @include pos($b:170px, $l:36%, $w:15px, $z:105);
+            @include pos($b:70px, $l:-5px, $w:0.5vw, $z:105);
         }
         .tree_snowman_gray{
-            @include pos($b:100px, $l:38%, $w:15px, $z:105);
+            @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
+            transform: rotate(30deg)
         }
         .red_socks{
-            @include pos($b:123px, $l:37%, $w:10px, $z:105);
+            @include pos($b:42px, $l:12px, $w:0.5vw, $z:105);
         }
         .star{
-            @include pos($b:155px, $l:37%, $w:20px, $z:105);
+            @include pos($b:73px, $l:50%, $w:20px, $z:105);
+            transform: translateX(-50%);
         }
         .ribbon{
-            @include pos($b:146px, $l:38%, $w:10px, $z:105);
-            transform: rotate(-30deg)
+            @include pos($t:10px, $l:27px, $w:0.5vw, $z:105);
+            transform: rotate(30deg)
         }
         .white_socks{
-            @include pos($b:90px, $l:35%, $w:10px, $z:105);
+            @include pos($b:15px, $l:40px, $w:0.5vw, $z:105);
         }
     }
     
 
     .snowmans{
         .purplehat_snowman{
-            @include pos($b:88px, $l:32%, $w:30px, $z:105);
+            @include pos($b:0, $l:-36px, $w:2vw, $z:105);
         }
         .redhat_snowman{
-            @include pos($b:83px, $l:42%, $w:20px, $z:105);
+            @include pos($b:0, $r:-17px, $w:1.5vw, $z:105);
         }
         .red_ribbon_snowman{
-            @include pos($b:76px, $l:38%, $w:10px, $z:105);
+            @include pos($b:0, $r:-26px, $w:10px, $z:105);
         }
         .green_ribbon_snowman{
-            @include pos($b:76px, $l:37%, $w:10px, $z:105);
+            @include pos($b:0, $l:-13px, $w:10px, $z:105);
         }
     }
 }
