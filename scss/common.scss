@@ -1,14 +1,20 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 @import 'reset','responsible','variables','mixin';
 
-@import 'index','about','works';
+@import 'index','about','works','modal';
 @import 'footer';
 
 html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-family: 'Kanit', sans-serif;
+    
 }
 .all_wrap{
     @include bgCover('night_sky.svg');
@@ -16,3 +22,19 @@ html,body{
     @include pos($p:fixed, $l:0,$t:0,$r:0,$b:0);
     overflow: hidden;
 }
+
+.modal{
+    font-family: 'Nova Square', sans-serif;
+    position: fixed;
+    right: 150px;
+    left:150px;
+    bottom:0;
+    @include fixed($l:150px, $r:150px,$b:0,)
+}
+// mixin fixed($l:0, $t:0, $r:0, $b:0){
+//     position: fixed;
+//     left:$l;
+//     right:$r;
+//     top:$t;
+//     bottom: $b;
+// }

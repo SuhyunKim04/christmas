@@ -14,9 +14,29 @@
 //     event.target.style.opacity = 0.5;
 //   });
 
-const tr = document.querySelector('.tree_container');
-// console.log(tree_container)
+const wrap = document.querySelector('.wrap');
+console.log(wrap)
+const tree_container = document.querySelector('.tree_container');
+const tree = tree_container.querySelector('.christmas_tree');
+const moon = wrap.querySelector('.moon')
+const home = wrap.querySelector('.home');
+const houses = home.querySelector('.houses');
+console.log(moon)
+// alert('hello world')
+
+moon.addEventListener('click',(e) => {
+    tree_container.classList.toggle('active')
+})
+// window.addEventListener('scroll', (e) => {
+//     console.log(window)
+//     let scroll = window.scrollY;
+//     console.log(scrollY)
+//     if(scroll > 200 ){
+//         tree_container.style.transform = `scale(5)`
+//     }
+// })
+
 window.addEventListener('scroll', (e) => {
-     let scroll = window.scrollY;
-    tr.style.transform = 'scale(6)';
+    let scroll = window.scrollY
+    console.log(scroll)
 })

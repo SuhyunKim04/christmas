@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
    
 
     .tree1{
@@ -87,9 +87,14 @@
     }
 
     .tree_container{
-        @include pos($b:300px,$r:60%,$w:5vw,$z:105);
+        @include pos($b:-200px,$r:60%,$w:5vw,$z:105);
         transform: scale(3);
         outline: 1px solid red;
+        transition: 0.9s;
+
+        &.active{
+            bottom: 150px;
+        }
         .christmas_tree{
            width: 100%;
         }

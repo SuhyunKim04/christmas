@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -69,7 +71,6 @@ fieldset {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 .wrap .tree1 {
   position: absolute;
@@ -195,11 +196,15 @@ fieldset {
 .wrap .tree_container {
   position: absolute;
   right: 60%;
-  bottom: 300px;
+  bottom: -200px;
   width: 5vw;
   z-index: 105;
   transform: scale(3);
   outline: 1px solid red;
+  transition: 0.9s;
+}
+.wrap .tree_container.active {
+  bottom: 150px;
 }
 .wrap .tree_container .christmas_tree {
   width: 100%;
@@ -367,6 +372,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  font-family: "Kanit", sans-serif;
 }
 
 .all_wrap {
@@ -378,6 +384,19 @@ html, body {
   top: 0;
   bottom: 0;
   overflow: hidden;
+}
+
+.modal {
+  font-family: "Nova Square", sans-serif;
+  position: fixed;
+  right: 150px;
+  left: 150px;
+  bottom: 0;
+  position: fixed;
+  left: 150px;
+  right: 150px;
+  top: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -26,7 +26,12 @@
     bottom: $b;
 }
 
-@mixin dim($color:#000, $alpha:0.7, $p:fixed) {
+@mixin posFull($p:absolute) {
+    position:$p;
+    left:0;right:0;bottom:0;top:0;
+}
+
+@mixin dim($color:#000, $alpha:1, $p:fixed) {
     @if $p != null {
         @include posFull($p);
     }
