@@ -368,6 +368,16 @@ fieldset {
   z-index: 105;
 }
 
+.work li {
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+.work li img {
+  margin-bottom: 20px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -389,14 +399,12 @@ html, body {
 .modal {
   font-family: "Nova Square", sans-serif;
   position: fixed;
-  right: 150px;
-  left: 150px;
-  bottom: 0;
-  position: fixed;
   left: 150px;
   right: 150px;
-  top: 0;
+  top: 100px;
   bottom: 0;
+  z-index: 200;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=common.css.map */

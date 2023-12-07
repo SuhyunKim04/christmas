@@ -40,3 +40,6 @@ window.addEventListener('scroll', (e) => {
     let scroll = window.scrollY
     console.log(scroll)
 })
+
+
+

@@ -25,16 +25,7 @@ html,body{
 
 .modal{
     font-family: 'Nova Square', sans-serif;
-    position: fixed;
-    right: 150px;
-    left:150px;
-    bottom:0;
-    @include fixed($l:150px, $r:150px,$b:0,)
+    @include fixed($l:150px, $r:150px,$b:0,$t:100px);
+    z-index: 200;
+    background-color: #fff;
 }
-// mixin fixed($l:0, $t:0, $r:0, $b:0){
-//     position: fixed;
-//     left:$l;
-//     right:$r;
-//     top:$t;
-//     bottom: $b;
-// }
