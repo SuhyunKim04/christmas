@@ -25,7 +25,9 @@ html,body{
 
 .modal{
     font-family: 'Nova Square', sans-serif;
-    @include fixed($l:150px, $r:150px,$b:0,$t:100px);
+    @include pos($p:relative,$l:80px, $r:80px,$b:0,$t:200px);
     z-index: 200;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }

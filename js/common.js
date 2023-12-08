@@ -26,6 +26,7 @@ console.log(moon)
 
 moon.addEventListener('click',(e) => {
     tree_container.classList.toggle('active')
+    console.log('hello');
 })
 // window.addEventListener('scroll', (e) => {
 //     console.log(window)
@@ -42,4 +43,55 @@ window.addEventListener('scroll', (e) => {
 })
 
 
+const deco =() =>{
+    const areas = document.querySelectorAll('.dragarea');
+    const stickers = document.querySelectorAll('.sticker');
+    let url, index;
+    
+    stickers.forEach(sticker => {
+        sticker.addEventListener('dragstart', () => {
+            getIndex(sticker.dataset.index);
+        })
+    
+        sticker.addEventListener('dragend', () => {
+    
+        })
+    })
+    
+    function getIndex(idx) {
+        index = idx;
+        url = `src(./images/stick_${index}.png)`
+    }
+    
+    function checkSuccess(idx) {
+        stickers.forEach(sticker => {
+            if (sticker.dataset.index === idx) {
+                sticker.style.display = 'none'
+            }
+        })
+    }
+    
+    areas.forEach(area => {
+        area.addEventListener('dragover',(e) => {
+            e.preventDefault();
+        })
+        area.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+        })
+    
+        area.addEventListener('drop',(e) => {
+            console.log(index, area.dataset.index)
+            let match = area.dataset.index === index;
+            if(!match) {
+                area.classList.add('error');
+            }else{
+                area.style.backgroundImage = url;
+                // shadow
+    
+                checkSuccess(index)
+            }
+        })
+    })
+}
 
+deco();

@@ -255,14 +255,14 @@ fieldset {
   z-index: 105;
   transform: rotate(20deg);
 }
-.wrap .tree_container .cherry {
+.wrap .tree_container .cherry[data-index="2"] {
   position: absolute;
   left: 65px;
   top: 0;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .cherry_gray {
+.wrap .tree_container .cherry_gray[data-index="2"] {
   position: absolute;
   left: 42px;
   bottom: 60px;
@@ -270,7 +270,7 @@ fieldset {
   z-index: 105;
   transform: rotate(50deg);
 }
-.wrap .tree_container .deco_bell {
+.wrap .tree_container .deco_bell[data-index="1"] {
   position: absolute;
   left: -20px;
   bottom: 50px;
@@ -278,7 +278,7 @@ fieldset {
   z-index: 105;
   transform: rotate(60deg);
 }
-.wrap .tree_container .deco_bell_gray {
+.wrap .tree_container .deco_bell_gray[data-index="1"] {
   position: absolute;
   left: 30px;
   bottom: 18px;
@@ -294,14 +294,14 @@ fieldset {
   z-index: 105;
   transform: rotate(-10deg);
 }
-.wrap .tree_container .tree_snowman {
+.wrap .tree_container .tree_snowman[data-index="3"] {
   position: absolute;
   left: -5px;
   bottom: 70px;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .tree_snowman_gray {
+.wrap .tree_container .tree_snowman_gray[data-index="3"] {
   position: absolute;
   left: 28px;
   bottom: 34px;
@@ -368,14 +368,16 @@ fieldset {
   z-index: 105;
 }
 
-.work li {
-  width: 450px;
-  margin: 0 auto;
-  padding-top: 80px;
+.tab_container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-.work li img {
-  margin-bottom: 20px;
+
+.tab_menu {
+  position: fixed;
+  bottom: 0;
+  display: flex;
 }
 
 html, body {
@@ -398,13 +400,15 @@ html, body {
 
 .modal {
   font-family: "Nova Square", sans-serif;
-  position: fixed;
-  left: 150px;
-  right: 150px;
-  top: 100px;
+  position: relative;
+  left: 80px;
+  right: 80px;
+  top: 200px;
   bottom: 0;
   z-index: 200;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -120,18 +120,18 @@
             @include pos($b:12px, $l:54px, $w:0.5vw, $z:105);
             transform: rotate(20deg);
         }
-        .cherry{
+        .cherry[data-index="2"]{
             @include pos($t:0, $l:65px, $w:0.5vw, $z:105);
         }
-        .cherry_gray{
+        .cherry_gray[data-index="2"]{
             @include pos($b:60px, $l:42px, $w:0.5vw, $z:105);
             transform: rotate(50deg);
         }
-        .deco_bell{
+        .deco_bell[data-index="1"]{
             @include pos($b:50px, $l:-20px, $w:0.5vw, $z:105);
             transform: rotate(60deg);
         }
-        .deco_bell_gray{
+        .deco_bell_gray[data-index="1"]{
             @include pos($b:18px, $l:30px, $w:0.5vw, $z:105);
             transform: rotate(20deg);
         }
@@ -139,10 +139,10 @@
             @include pos($b:25px, $l:53px, $w:0.5vw, $z:105);
             transform: rotate(-10deg)
         }
-        .tree_snowman{
+        .tree_snowman[data-index="3"]{
             @include pos($b:70px, $l:-5px, $w:0.5vw, $z:105);
         }
-        .tree_snowman_gray{
+        .tree_snowman_gray[data-index="3"]{
             @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
             transform: rotate(30deg)
         }
