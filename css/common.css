@@ -67,133 +67,130 @@ fieldset {
   border: none;
 }
 
-.wrap {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.wrap .tree1 {
+.all_wrap .tree1 {
   position: absolute;
   top: 0;
   width: 50%;
   z-index: 1000;
 }
-.wrap .tree2 {
+.all_wrap .tree2 {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 60%;
   z-index: 1000;
 }
-.wrap .tree3 {
+.all_wrap .tree3 {
   position: absolute;
   right: 0;
   width: 40%;
   z-index: 1000;
 }
-.wrap .tree4 {
+.all_wrap .tree4 {
   position: absolute;
   left: 0;
   top: 0;
   width: 70%;
   z-index: 1000;
 }
-.wrap .tree4.active {
+.all_wrap .tree4.active {
   transform: translate(-100px, -100px);
 }
-.wrap .home .houses {
+.all_wrap .home .houses {
   position: absolute;
   left: 250px;
   bottom: 130px;
   width: 5%;
   z-index: 105;
 }
-.wrap .home .houses_2 {
+.all_wrap .home .houses_2 {
   position: absolute;
   right: 50%;
   bottom: 140px;
   width: 3%;
   z-index: 105;
 }
-.wrap .home .houses_3 {
+.all_wrap .home .houses_3 {
   position: absolute;
   right: 40%;
   bottom: 35px;
   width: 3%;
   z-index: 105;
 }
-.wrap .home .houses_4 {
+.all_wrap .home .houses_4 {
   position: absolute;
   right: 30%;
   bottom: 190px;
   width: 3%;
   z-index: 105;
 }
-.wrap .home .houses_5 {
+.all_wrap .home .houses_5 {
   position: absolute;
   left: 30%;
   bottom: 190px;
   width: 3%;
   z-index: 105;
 }
-.wrap .moon {
+.all_wrap .moon {
   background: url("../images/moon.png") no-repeat center center/cover;
   position: absolute;
   right: 80px;
   top: 50px;
   width: 150px;
   height: 150px;
+  z-index: 200;
+  transition: 0.3s;
 }
-.wrap .snow_ground .snow_layer_1 {
+.all_wrap .snow_ground .snow_layer_1 {
   position: fixed;
   bottom: -40px;
   z-index: 101;
 }
-.wrap .snow_ground .snow_layer_2 {
+.all_wrap .snow_ground .snow_layer_2 {
   position: fixed;
   bottom: -50px;
   z-index: 100;
 }
-.wrap .snow_ground .snow_layer_3 {
+.all_wrap .snow_ground .snow_layer_3 {
   position: fixed;
   bottom: -70px;
 }
-.wrap .back_trees .back_trees_1 {
+.all_wrap .back_trees .back_trees_1 {
   position: absolute;
   left: 230px;
   bottom: 145px;
   width: 26px;
   z-index: 103;
 }
-.wrap .back_trees .back_trees_2 {
+.all_wrap .back_trees .back_trees_2 {
   position: absolute;
   left: 437px;
   bottom: 189px;
   width: 26px;
   z-index: 103;
 }
-.wrap .back_trees .back_trees_3 {
+.all_wrap .back_trees .back_trees_3 {
   position: absolute;
   right: 490px;
   top: 266px;
   width: 26px;
   z-index: 103;
 }
-.wrap .back_trees .back_trees_4 {
+.all_wrap .back_trees .back_trees_4 {
   position: absolute;
   right: 736px;
   top: 320px;
   width: 26px;
   z-index: 103;
 }
-.wrap .santa {
+.all_wrap .santa {
   position: relative;
   background: url("../images/santa.png") no-repeat center center/cover;
   width: 222px;
   height: 114px;
   animation-name: santa;
 }
-.wrap .tree_container {
+.all_wrap .tree_container {
   position: absolute;
   right: 60%;
   bottom: -200px;
@@ -203,20 +200,20 @@ fieldset {
   outline: 1px solid red;
   transition: 0.9s;
 }
-.wrap .tree_container.active {
+.all_wrap .tree_container.active {
   bottom: 150px;
 }
-.wrap .tree_container .christmas_tree {
+.all_wrap .tree_container .christmas_tree {
   width: 100%;
 }
-.wrap .tree_container .deco_1 {
+.all_wrap .tree_container .deco_1 {
   position: absolute;
   left: 37%;
   bottom: 50px;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .deco_2 {
+.all_wrap .tree_container .deco_2 {
   position: absolute;
   left: 7px;
   bottom: 12px;
@@ -224,7 +221,7 @@ fieldset {
   z-index: 105;
   transform: rotate(40deg);
 }
-.wrap .tree_container .deco_3 {
+.all_wrap .tree_container .deco_3 {
   position: absolute;
   left: 40px;
   bottom: 30px;
@@ -232,7 +229,7 @@ fieldset {
   z-index: 105;
   transform: rotate(50deg);
 }
-.wrap .tree_container .deco_4 {
+.all_wrap .tree_container .deco_4 {
   position: absolute;
   left: 20px;
   bottom: 25px;
@@ -240,14 +237,14 @@ fieldset {
   z-index: 105;
   transform: rotate(20deg);
 }
-.wrap .tree_container .deco_5 {
+.all_wrap .tree_container .deco_5 {
   position: absolute;
   left: 46px;
   bottom: 40px;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .deco_6 {
+.all_wrap .tree_container .deco_6 {
   position: absolute;
   left: 54px;
   bottom: 12px;
@@ -255,30 +252,30 @@ fieldset {
   z-index: 105;
   transform: rotate(20deg);
 }
-.wrap .tree_container .cherry[data-index="2"] {
+.all_wrap .tree_container .stickers .sticker {
   position: absolute;
-  left: 65px;
-  top: 0;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .cherry_gray[data-index="2"] {
-  position: absolute;
-  left: 42px;
-  bottom: 60px;
-  width: 0.5vw;
-  z-index: 105;
-  transform: rotate(50deg);
-}
-.wrap .tree_container .deco_bell[data-index="1"] {
-  position: absolute;
-  left: -20px;
+.all_wrap .tree_container .stickers .sticker[data-name=bell] {
   bottom: 50px;
-  width: 0.5vw;
-  z-index: 105;
+  left: -20px;
   transform: rotate(60deg);
 }
-.wrap .tree_container .deco_bell_gray[data-index="1"] {
+.all_wrap .tree_container .stickers .sticker[data-name=cherry] {
+  top: 0;
+  left: 0;
+}
+.all_wrap .tree_container .stickers .sticker[data-name=snowman] {
+  bottom: 70px;
+  left: -5px;
+}
+.all_wrap .tree_container .drag_container .dragarea {
+  position: absolute;
+  width: 0.5vw;
+  z-index: 105;
+}
+.all_wrap .tree_container .drag_container .dragarea[data-name=bell] {
   position: absolute;
   left: 30px;
   bottom: 18px;
@@ -286,22 +283,11 @@ fieldset {
   z-index: 105;
   transform: rotate(20deg);
 }
-.wrap .tree_container .stick {
-  position: absolute;
-  left: 53px;
-  bottom: 25px;
-  width: 0.5vw;
-  z-index: 105;
-  transform: rotate(-10deg);
+.all_wrap .tree_container .drag_container .dragarea[data-name=cherry] {
+  top: 0;
+  left: 0;
 }
-.wrap .tree_container .tree_snowman[data-index="3"] {
-  position: absolute;
-  left: -5px;
-  bottom: 70px;
-  width: 0.5vw;
-  z-index: 105;
-}
-.wrap .tree_container .tree_snowman_gray[data-index="3"] {
+.all_wrap .tree_container .drag_container .dragarea[data-name=snowman] {
   position: absolute;
   left: 28px;
   bottom: 34px;
@@ -309,14 +295,22 @@ fieldset {
   z-index: 105;
   transform: rotate(30deg);
 }
-.wrap .tree_container .red_socks {
+.all_wrap .tree_container .stick {
+  position: absolute;
+  left: 53px;
+  bottom: 25px;
+  width: 0.5vw;
+  z-index: 105;
+  transform: rotate(-10deg);
+}
+.all_wrap .tree_container .red_socks {
   position: absolute;
   left: 12px;
   bottom: 42px;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .tree_container .star {
+.all_wrap .tree_container .star {
   position: absolute;
   left: 50%;
   bottom: 73px;
@@ -324,7 +318,7 @@ fieldset {
   z-index: 105;
   transform: translateX(-50%);
 }
-.wrap .tree_container .ribbon {
+.all_wrap .tree_container .ribbon {
   position: absolute;
   left: 27px;
   top: 10px;
@@ -332,35 +326,35 @@ fieldset {
   z-index: 105;
   transform: rotate(30deg);
 }
-.wrap .tree_container .white_socks {
+.all_wrap .tree_container .white_socks {
   position: absolute;
   left: 40px;
   bottom: 15px;
   width: 0.5vw;
   z-index: 105;
 }
-.wrap .snowmans .purplehat_snowman {
+.all_wrap .snowmans .purplehat_snowman {
   position: absolute;
   left: -36px;
   bottom: 0;
   width: 2vw;
   z-index: 105;
 }
-.wrap .snowmans .redhat_snowman {
+.all_wrap .snowmans .redhat_snowman {
   position: absolute;
   right: -17px;
   bottom: 0;
   width: 1.5vw;
   z-index: 105;
 }
-.wrap .snowmans .red_ribbon_snowman {
+.all_wrap .snowmans .red_ribbon_snowman {
   position: absolute;
   right: -26px;
   bottom: 0;
   width: 10px;
   z-index: 105;
 }
-.wrap .snowmans .green_ribbon_snowman {
+.all_wrap .snowmans .green_ribbon_snowman {
   position: absolute;
   left: -13px;
   bottom: 0;
@@ -368,23 +362,56 @@ fieldset {
   z-index: 105;
 }
 
+.all_wrap.scrolled .moon {
+  transform: scale(2);
+}
+
+.modal {
+  font-family: "Nova Square", sans-serif;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 74vh;
+  z-index: 200;
+  background-color: #fff;
+  width: 100%;
+  min-width: 500px;
+  max-width: 800px;
+}
+
 .tab_container {
-  display: flex;
-  flex-direction: column;
   text-align: center;
+  height: calc(100% - 80px);
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab_container .tab_contents {
+  display: none;
+}
+.tab_container .tab_contents.on {
+  display: block;
 }
 
 .tab_menu {
-  position: fixed;
+  background-color: blue;
+  position: absolute;
+  left: 0;
   bottom: 0;
-  display: flex;
+  right: 0;
+  height: 80px;
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: "Kanit", sans-serif;
+}
+
+body {
+  height: 2000px;
 }
 
 .all_wrap {
@@ -396,19 +423,6 @@ html, body {
   top: 0;
   bottom: 0;
   overflow: hidden;
-}
-
-.modal {
-  font-family: "Nova Square", sans-serif;
-  position: relative;
-  left: 80px;
-  right: 80px;
-  top: 200px;
-  bottom: 0;
-  z-index: 200;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=common.css.map */

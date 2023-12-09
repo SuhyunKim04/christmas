@@ -1,7 +1,7 @@
-.wrap{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+.all_wrap{
+    // position: relative;
+    // width: 100vw;
+    // height: 100vh;
     // overflow: hidden;
    
 
@@ -43,6 +43,9 @@
     .moon{
         @include bgCover('moon.png');
         @include pos($w:150px, $h:150px, $t:50px,$r:80px);
+        z-index: 200;
+        transition: 0.3s;
+        
     }
 
     .snow_ground{
@@ -120,32 +123,69 @@
             @include pos($b:12px, $l:54px, $w:0.5vw, $z:105);
             transform: rotate(20deg);
         }
-        .cherry[data-index="2"]{
-            @include pos($t:0, $l:65px, $w:0.5vw, $z:105);
+
+        .stickers {
+            .sticker {
+                @include pos($w:0.5vw, $z:105);
+            }
+            .sticker[data-name="bell"] {
+                bottom:50px;
+                left:-20px;
+                transform: rotate(60deg);
+            }
+            .sticker[data-name="cherry"] {
+                top:0;
+                left:0;
+            }
+            .sticker[data-name="snowman"] {
+                bottom: 70px;
+                left: -5px;
+            }
+             
         }
-        .cherry_gray[data-index="2"]{
-            @include pos($b:60px, $l:42px, $w:0.5vw, $z:105);
-            transform: rotate(50deg);
+        .drag_container {
+            .dragarea {
+                @include pos($w:0.5vw, $z:105);
+            }
+            .dragarea[data-name="bell"] {
+                @include pos($b:18px, $l:30px, $w:0.5vw, $z:105);
+                transform: rotate(20deg);
+            }
+            .dragarea[data-name="cherry"] {
+                top:0;
+                left:0;
+            }
+            .dragarea[data-name="snowman"] {
+                @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
+                transform: rotate(30deg)
+            }
+             
         }
-        .deco_bell[data-index="1"]{
-            @include pos($b:50px, $l:-20px, $w:0.5vw, $z:105);
-            transform: rotate(60deg);
-        }
-        .deco_bell_gray[data-index="1"]{
-            @include pos($b:18px, $l:30px, $w:0.5vw, $z:105);
-            transform: rotate(20deg);
-        }
+
+    
+        // .cherry_gray[data-index="2"]{
+        //     @include pos($b:60px, $l:42px, $w:0.5vw, $z:105);
+        //     transform: rotate(50deg);
+        // }
+        // .deco_bell[data-index="1"]{
+        //     @include pos($b:50px, $l:-20px, $w:0.5vw, $z:105);
+        //     transform: rotate(60deg);
+        // }
+        // .deco_bell_gray[data-index="1"]{
+        //     @include pos($b:18px, $l:30px, $w:0.5vw, $z:105);
+        //     transform: rotate(20deg);
+        // }
         .stick{
             @include pos($b:25px, $l:53px, $w:0.5vw, $z:105);
             transform: rotate(-10deg)
         }
-        .tree_snowman[data-index="3"]{
-            @include pos($b:70px, $l:-5px, $w:0.5vw, $z:105);
-        }
-        .tree_snowman_gray[data-index="3"]{
-            @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
-            transform: rotate(30deg)
-        }
+        // .tree_snowman[data-index="3"]{
+        //     @include pos($b:70px, $l:-5px, $w:0.5vw, $z:105);
+        // }
+        // .tree_snowman_gray[data-index="3"]{
+        //     @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
+        //     transform: rotate(30deg)
+        // }
         .red_socks{
             @include pos($b:42px, $l:12px, $w:0.5vw, $z:105);
         }
@@ -180,3 +220,9 @@
 }
 
 
+.all_wrap.scrolled {
+    .moon{
+        transform: scale(2);
+    }
+}
+ 

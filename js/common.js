@@ -14,7 +14,7 @@
 //     event.target.style.opacity = 0.5;
 //   });
 
-const wrap = document.querySelector('.wrap');
+const wrap = document.querySelector('.all_wrap');
 console.log(wrap)
 const tree_container = document.querySelector('.tree_container');
 const tree = tree_container.querySelector('.christmas_tree');
@@ -24,33 +24,32 @@ const houses = home.querySelector('.houses');
 console.log(moon)
 // alert('hello world')
 
-moon.addEventListener('click',(e) => {
-    tree_container.classList.toggle('active')
-    console.log('hello');
-})
-// window.addEventListener('scroll', (e) => {
-//     console.log(window)
-//     let scroll = window.scrollY;
-//     console.log(scrollY)
-//     if(scroll > 200 ){
-//         tree_container.style.transform = `scale(5)`
-//     }
+// moon.addEventListener('click',(e) => {
+//     tree_container.classList.toggle('active')
+//     console.log('hello');
 // })
-
 window.addEventListener('scroll', (e) => {
-    let scroll = window.scrollY
-    console.log(scroll)
+    console.log(window)
+    let scroll = window.scrollY;
+    console.log(scrollY)
+    if(scroll > 100){
+        wrap.classList.add('scrolled');
+    }else{
+        wrap.classList.remove('scrolled');
+    }
 })
+
+
 
 
 const deco =() =>{
     const areas = document.querySelectorAll('.dragarea');
     const stickers = document.querySelectorAll('.sticker');
-    let url, index;
+    let url, decoName;
     
     stickers.forEach(sticker => {
         sticker.addEventListener('dragstart', () => {
-            getIndex(sticker.dataset.index);
+            getIndex(sticker.dataset.name);
         })
     
         sticker.addEventListener('dragend', () => {
@@ -58,14 +57,14 @@ const deco =() =>{
         })
     })
     
-    function getIndex(idx) {
-        index = idx;
-        url = `src(./images/stick_${index}.png)`
+    function getIndex(name) {
+        decoName = name;
+        url = `./images/stick_${decoName}.png`
     }
     
-    function checkSuccess(idx) {
+    function checkSuccess(name) {
         stickers.forEach(sticker => {
-            if (sticker.dataset.index === idx) {
+            if (sticker.dataset.name === name) {
                 sticker.style.display = 'none'
             }
         })
@@ -80,15 +79,18 @@ const deco =() =>{
         })
     
         area.addEventListener('drop',(e) => {
-            console.log(index, area.dataset.index)
-            let match = area.dataset.index === index;
+            console.log(decoName, area.dataset.name)
+            let match = area.dataset.name === decoName;
             if(!match) {
                 area.classList.add('error');
             }else{
-                area.style.backgroundImage = url;
+                console.log(url)
+                area.setAttribute('src', url);
+                // area.setAttribute('src', url);
+                // area.style.backgroundImage = url;
                 // shadow
     
-                checkSuccess(index)
+                checkSuccess(decoName)
             }
         })
     })
