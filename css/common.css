@@ -60,11 +60,17 @@ textarea {
 button {
   border: none;
   cursor: pointer;
-  background: none;
+  background-color: transparent;
+  color: inherit;
 }
 
 fieldset {
   border: none;
+}
+
+:root {
+  --x: 0;
+  --y:0;
 }
 
 .all_wrap .tree1 {
@@ -72,6 +78,7 @@ fieldset {
   top: 0;
   width: 50%;
   z-index: 1000;
+  transform: translate(var(--x), 0);
 }
 .all_wrap .tree2 {
   position: absolute;
@@ -93,15 +100,13 @@ fieldset {
   width: 70%;
   z-index: 1000;
 }
-.all_wrap .tree4.active {
-  transform: translate(-100px, -100px);
-}
 .all_wrap .home .houses {
   position: absolute;
-  left: 250px;
+  left: 20%;
   bottom: 130px;
-  width: 5%;
-  z-index: 105;
+  width: 3%;
+  z-index: 106;
+  transition: 0.5s;
 }
 .all_wrap .home .houses_2 {
   position: absolute;
@@ -109,6 +114,7 @@ fieldset {
   bottom: 140px;
   width: 3%;
   z-index: 105;
+  transition: 0.5s;
 }
 .all_wrap .home .houses_3 {
   position: absolute;
@@ -116,6 +122,7 @@ fieldset {
   bottom: 35px;
   width: 3%;
   z-index: 105;
+  transition: 0.5s;
 }
 .all_wrap .home .houses_4 {
   position: absolute;
@@ -123,6 +130,7 @@ fieldset {
   bottom: 190px;
   width: 3%;
   z-index: 105;
+  transition: 0.5s;
 }
 .all_wrap .home .houses_5 {
   position: absolute;
@@ -130,16 +138,18 @@ fieldset {
   bottom: 190px;
   width: 3%;
   z-index: 105;
+  transition: 0.5s;
 }
 .all_wrap .moon {
   background: url("../images/moon.png") no-repeat center center/cover;
   position: absolute;
   right: 80px;
-  top: 50px;
-  width: 150px;
-  height: 150px;
+  top: 30px;
+  width: 230px;
+  height: 230px;
   z-index: 200;
-  transition: 0.3s;
+  transition: 0.5s;
+  transform: translate(-50px, 50px) scale(0.7);
 }
 .all_wrap .snow_ground .snow_layer_1 {
   position: fixed;
@@ -192,12 +202,11 @@ fieldset {
 }
 .all_wrap .tree_container {
   position: absolute;
-  right: 60%;
-  bottom: -200px;
+  right: 50%;
+  bottom: -350px;
   width: 5vw;
   z-index: 105;
-  transform: scale(3);
-  outline: 1px solid red;
+  transform: scale(6);
   transition: 0.9s;
 }
 .all_wrap .tree_container.active {
@@ -258,13 +267,13 @@ fieldset {
   z-index: 105;
 }
 .all_wrap .tree_container .stickers .sticker[data-name=bell] {
-  bottom: 50px;
+  bottom: 60px;
   left: -20px;
   transform: rotate(60deg);
 }
 .all_wrap .tree_container .stickers .sticker[data-name=cherry] {
-  top: 0;
-  left: 0;
+  bottom: 70px;
+  right: -20px;
 }
 .all_wrap .tree_container .stickers .sticker[data-name=snowman] {
   bottom: 70px;
@@ -284,8 +293,11 @@ fieldset {
   transform: rotate(20deg);
 }
 .all_wrap .tree_container .drag_container .dragarea[data-name=cherry] {
-  top: 0;
-  left: 0;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  width: 0.5vw;
+  z-index: 105;
 }
 .all_wrap .tree_container .drag_container .dragarea[data-name=snowman] {
   position: absolute;
@@ -335,35 +347,81 @@ fieldset {
 }
 .all_wrap .snowmans .purplehat_snowman {
   position: absolute;
-  left: -36px;
+  left: -13px;
   bottom: 0;
   width: 2vw;
-  z-index: 105;
+  z-index: 200;
 }
 .all_wrap .snowmans .redhat_snowman {
   position: absolute;
-  right: -17px;
+  right: -9px;
   bottom: 0;
-  width: 1.5vw;
-  z-index: 105;
+  width: 1vw;
+  z-index: 200;
 }
 .all_wrap .snowmans .red_ribbon_snowman {
   position: absolute;
-  right: -26px;
+  right: -12px;
   bottom: 0;
-  width: 10px;
-  z-index: 105;
+  width: 5px;
+  z-index: 200;
 }
 .all_wrap .snowmans .green_ribbon_snowman {
   position: absolute;
-  left: -13px;
+  left: -12px;
   bottom: 0;
-  width: 10px;
-  z-index: 105;
+  width: 5px;
+  z-index: 200;
 }
 
+.all_wrap.scrolled {
+  /*
+      .trees{
+          .tree1{
+              left:-600px;
+          }
+          .tree4{
+              left: -650px;
+              top: -370px;
+          }
+
+          .tree3{
+              right: -610px
+          }
+          .tree2{
+              bottom: -530px;
+          }
+      }
+      */
+}
 .all_wrap.scrolled .moon {
-  transform: scale(2);
+  transform: translate(0, 0) scale(1);
+}
+.all_wrap.scrolled .tree_container {
+  bottom: 250px;
+}
+.all_wrap.scrolled .snowmans .purplehat_snowman {
+  width: 1.5vw;
+}
+.all_wrap.scrolled .home .houses {
+  width: 15%;
+  left: 80px;
+}
+.all_wrap.scrolled .home .houses_5 {
+  width: 10%;
+  left: 19%;
+}
+.all_wrap.scrolled .home .houses_4 {
+  width: 10%;
+  right: 5%;
+}
+.all_wrap.scrolled .home .houses_2 {
+  width: 10%;
+  right: 25%;
+}
+.all_wrap.scrolled .home .houses_3 {
+  width: 8%;
+  right: 15%;
 }
 
 .modal {
@@ -403,6 +461,9 @@ fieldset {
   right: 0;
   height: 80px;
 }
+.tab_menu li.active {
+  color: #fff;
+}
 
 html, body {
   width: 100%;
@@ -412,11 +473,12 @@ html, body {
 
 body {
   height: 2000px;
+  background: url("../images/night_sky.svg") no-repeat center center/cover;
+  background-attachment: fixed;
+  background-color: #252933;
 }
 
 .all_wrap {
-  background: url("../images/night_sky.svg") no-repeat center center/cover;
-  background-attachment: fixed;
   position: fixed;
   left: 0;
   right: 0;

@@ -1,3 +1,9 @@
+:root{
+    --x : 0;
+    --y:0;
+}
+
+
 .all_wrap{
     // position: relative;
     // width: 100vw;
@@ -7,44 +13,50 @@
 
     .tree1{
         @include pos($w:50%,$t:0,$z:1000);
+        transform:translate(var(--x), 0);
     }
     .tree2 {
         @include pos($w:60%, $r:0,$b:0,$z:1000);
     }
-
+    
     .tree3 {
-        @include pos($w:40%,$r:0, $z:1000);
+        @include pos($w:40%,$r:0, $z:1000); 
     }
     .tree4{
-        @include pos($w:70%, $l:0,$t:0,$z:1000);
-        &.active{
-            transform: translate(-100px, -100px);
-        }
+        // transform:translate(var(--x), var(--y));
+        @include pos($w:70%, $l:0,$t:0,$z:1000); 
+       
     }
     
     
     .home{
         .houses{
-           @include pos($w:5%, $b:130px, $l:250px,$z:105);
+           @include pos($w:3%, $b:130px, $l:20%,$z:106);
+           transition: 0.5s;
         }
         .houses_2{
             @include pos($w:3%, $b:140px, $r:50%,$z:105);
+            transition: 0.5s;
         }
         .houses_3{
             @include pos($w:3%, $b:35px, $r:40%,$z:105);
+            transition: 0.5s;
         }
         .houses_4{
             @include pos($w:3%, $b:190px, $r:30%,$z:105);
+            transition: 0.5s;
         }
         .houses_5{
             @include pos($w:3%, $b:190px, $l:30%,$z:105);
+            transition: 0.5s;
         }
     }
     .moon{
         @include bgCover('moon.png');
-        @include pos($w:150px, $h:150px, $t:50px,$r:80px);
+        @include pos($w:230px, $h:230px, $t:30px,$r:80px);
         z-index: 200;
-        transition: 0.3s;
+        transition: 0.5s;
+        transform: translate(-50px, 50px) scale(0.7);
         
     }
 
@@ -90,9 +102,9 @@
     }
 
     .tree_container{
-        @include pos($b:-200px,$r:60%,$w:5vw,$z:105);
-        transform: scale(3);
-        outline: 1px solid red;
+        @include pos($b:-350px,$r:50%,$w:5vw,$z:105);
+        transform: scale(6);
+        // outline: 1px solid red;
         transition: 0.9s;
 
         &.active{
@@ -129,13 +141,13 @@
                 @include pos($w:0.5vw, $z:105);
             }
             .sticker[data-name="bell"] {
-                bottom:50px;
+                bottom:60px;
                 left:-20px;
                 transform: rotate(60deg);
             }
             .sticker[data-name="cherry"] {
-                top:0;
-                left:0;
+               bottom:70px;
+                right:-20px;
             }
             .sticker[data-name="snowman"] {
                 bottom: 70px;
@@ -152,8 +164,7 @@
                 transform: rotate(20deg);
             }
             .dragarea[data-name="cherry"] {
-                top:0;
-                left:0;
+                @include pos($b:50px, $l:40px, $w:0.5vw, $z:105);
             }
             .dragarea[data-name="snowman"] {
                 @include pos($b:34px, $l:28px, $w:0.5vw, $z:105);
@@ -205,24 +216,76 @@
 
     .snowmans{
         .purplehat_snowman{
-            @include pos($b:0, $l:-36px, $w:2vw, $z:105);
+            @include pos($b:0, $l:-13px, $w:2vw, $z:200);
         }
         .redhat_snowman{
-            @include pos($b:0, $r:-17px, $w:1.5vw, $z:105);
+            @include pos($b:0, $r:-9px, $w:1vw, $z:200);
         }
         .red_ribbon_snowman{
-            @include pos($b:0, $r:-26px, $w:10px, $z:105);
+            @include pos($b:0, $r:-12px, $w:5px, $z:200);
         }
         .green_ribbon_snowman{
-            @include pos($b:0, $l:-13px, $w:10px, $z:105);
+            @include pos($b:0, $l:-12px, $w:5px, $z:200);
         }
     }
 }
 
 
+
+
 .all_wrap.scrolled {
     .moon{
-        transform: scale(2);
+        transform: translate(0, 0) scale(1) ;
     }
+    .tree_container{
+        bottom:250px;
+    }
+    .snowmans{
+        .purplehat_snowman{
+            width: 1.5vw;
+        }
+    }
+
+    .home{
+        .houses{
+            width: 15%;
+            left: 80px;
+        }
+        .houses_5{
+            width: 10%;
+            left: 19%;
+        }
+        .houses_4{
+            width: 10%;
+            right: 5%;
+        }
+        .houses_2{
+            width: 10%;
+            right: 25%;
+        }
+        .houses_3{
+            width: 8%;
+            right: 15%;
+        }
+    }
+/*
+    .trees{
+        .tree1{
+            left:-600px;
+        }
+        .tree4{
+            left: -650px;
+            top: -370px;
+        }
+
+        .tree3{
+            right: -610px
+        }
+        .tree2{
+            bottom: -530px;
+        }
+    }
+    */
+
 }
  

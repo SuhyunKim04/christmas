@@ -55,8 +55,11 @@ img{
 // form
 textarea { resize:none;}
 
-button {border: none; cursor:pointer;
-	background:none;
+button {
+	border: none; 
+	cursor:pointer;
+	background-color:transparent;
+	color:inherit;
 }
 
 fieldset{

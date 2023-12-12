@@ -18,10 +18,11 @@ html,body{
 
 body{
     height: 2000px;
-}
-.all_wrap{
     @include bgCover('night_sky.svg');
     background-attachment: fixed;
+    background-color: #252933;
+}
+.all_wrap{
     @include pos($p:fixed, $l:0,$t:0,$r:0,$b:0);
     overflow: hidden;
 }

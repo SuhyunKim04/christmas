@@ -14,20 +14,19 @@
 //     event.target.style.opacity = 0.5;
 //   });
 
-const wrap = document.querySelector('.all_wrap');
-console.log(wrap)
+const docs = document.documentElement;
+const wrap = document.querySelector('.all_wrap'); 
 const tree_container = document.querySelector('.tree_container');
 const tree = tree_container.querySelector('.christmas_tree');
 const moon = wrap.querySelector('.moon')
 const home = wrap.querySelector('.home');
-const houses = home.querySelector('.houses');
-console.log(moon)
-// alert('hello world')
+const houses = home.querySelector('.houses');  
+const tree3 = document.querySelector('.tree3');
+const tree2 = document.querySelector('.tree2');
+const tree4 = document.querySelector('.tree4');
 
-// moon.addEventListener('click',(e) => {
-//     tree_container.classList.toggle('active')
-//     console.log('hello');
-// })
+ 
+ 
 window.addEventListener('scroll', (e) => {
     console.log(window)
     let scroll = window.scrollY;
@@ -37,6 +36,12 @@ window.addEventListener('scroll', (e) => {
     }else{
         wrap.classList.remove('scrolled');
     }
+
+    docs.style.setProperty('--x', `-${scroll * 0.5}px`)
+    docs.style.setProperty('--y', `-${scroll * 0.1}px`)
+    tree3.style.transform = `translateX(${scroll * 0.8}px)`
+    tree2.style.transform = `translateY(${scroll * 0.8}px)`
+    tree4.style.transform = `translate(-${scroll * 0.5}px, ${scroll * 0.5}px)`
 })
 
 
@@ -96,4 +101,35 @@ const deco =() =>{
     })
 }
 
+const menuTab = () =>{
+    const modal = document.querySelector('.modal');
+    const tabContainer = modal.querySelector('.tab_container');
+    const tabContents = modal.querySelectorAll('.tab_contents');
+    const tabMenus = modal.querySelectorAll('.tab_menu li');
+    let currentIndex = 0;
+    tabContents[currentIndex].classList.add('on')
+    
+    
+    tabMenus.forEach((menu,index) => {
+        menu.addEventListener('click',(e) => {  
+            let status = menu.classList.contains('active');
+            if( !status ){
+                menuReset();
+                menu.classList.add('active');
+                currentIndex = index;
+                console.log(currentIndex);
+            } else{
+                menu.classList.remove('active');
+            }
+        })
+    })
+
+    function menuReset() {
+        tabMenus.forEach(menu => {
+            menu.classList.remove('active');
+        })
+    }
+}
+
 deco();
+menuTab();
