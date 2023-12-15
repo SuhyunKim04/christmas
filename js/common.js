@@ -121,6 +121,12 @@ const menuTab = () =>{
             } else{
                 menu.classList.remove('active');
             }
+            tabContents.forEach(content => {
+                content.classList.remove('on')
+            })
+
+            tabContents[currentIndex].classList.add('on')
+
         })
     })
 
