@@ -68,6 +68,15 @@ fieldset {
   border: none;
 }
 
+.blind, legend {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 :root {
   --x: 0;
   --y:0;
@@ -439,7 +448,6 @@ fieldset {
 }
 
 .tab_container {
-  text-align: center;
   height: calc(100% - 80px);
   background-color: gold;
   display: flex;
@@ -452,6 +460,27 @@ fieldset {
 .tab_container .tab_contents.on {
   display: block;
 }
+.tab_container .tab_contents p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.tab_container .tab_contents a {
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+.tab_container .tab_contents a:first-child {
+  margin-right: 20px;
+}
+.tab_container .tab_contents img {
+  width: 350px;
+}
+.tab_container .detail {
+  display: flex;
+  column-gap: 50px;
+}
 
 .tab_menu {
   background-color: blue;
@@ -463,6 +492,29 @@ fieldset {
 }
 .tab_menu li.active {
   color: #fff;
+}
+
+.close {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+.close:before, .close:after {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 2px;
+  background-color: #000;
+}
+.close::before {
+  transform: rotate(45deg);
+  top: -6px;
+  right: 3px;
+}
+.close:after {
+  transform: rotate(-45deg);
+  top: -6px;
+  right: 3px;
 }
 
 html, body {

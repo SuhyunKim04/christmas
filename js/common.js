@@ -41,7 +41,7 @@ window.addEventListener('scroll', (e) => {
     docs.style.setProperty('--y', `-${scroll * 0.1}px`)
     tree3.style.transform = `translateX(${scroll * 0.8}px)`
     tree2.style.transform = `translateY(${scroll * 0.8}px)`
-    tree4.style.transform = `translate(-${scroll * 0.5}px, ${scroll * 0.5}px)`
+    tree4.style.transform = `translate(-${scroll * 0.5}px, -${scroll * 0.5}px)`
 })
 
 
@@ -100,7 +100,7 @@ const deco =() =>{
         })
     })
 }
-
+const close = document.querySelector('.close');
 const menuTab = () =>{
     const modal = document.querySelector('.modal');
     const tabContainer = modal.querySelector('.tab_container');
@@ -128,6 +128,7 @@ const menuTab = () =>{
             tabContents[currentIndex].classList.add('on')
 
         })
+        closeModal();
     })
 
     function menuReset() {
@@ -135,7 +136,15 @@ const menuTab = () =>{
             menu.classList.remove('active');
         })
     }
+    function closeModal (){
+        close.addEventListener('click', (e) => {
+          modal.style.display = 'none'
+    
+        })
+    }
 }
+
+
 
 deco();
 menuTab();
